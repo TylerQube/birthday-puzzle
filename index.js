@@ -13,7 +13,7 @@ document.addEventListener('keydown', event => {
 function submit() {
     var valid;
     submitBtn.style.backgroundPosition = "left bottom"
-    console.log(rot13(passkey, 13)
+    console.log(rot13(passkey, 13))
     if(!(document.getElementById('password-input').value == rot13(passkey, 13))) {
         submitBtn.classList.add('wrong-pass')
         document.getElementById('cover').style.backgroundColor = '#ff1a1a'
