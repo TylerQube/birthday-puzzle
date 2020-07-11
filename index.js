@@ -6,6 +6,11 @@ document.getElementById('password-input').addEventListener('click', function() {
     submitBtn.style.width = "6em"
 })
 
+document.addEventListener('keydown', event => {
+    if (event.keyCode == 13) { submit() }
+
+}
+
 function submit() {
     var valid;
     submitBtn.style.backgroundPosition = "left bottom"
