@@ -1,4 +1,4 @@
-const passkey = "password"
+const passkey = "cnffjbeq"
 const giftCode = "1234567890"
 var submitBtn = document.getElementById('submit')
 
@@ -13,7 +13,7 @@ document.addEventListener('keydown', event => {
 function submit() {
     var valid;
     submitBtn.style.backgroundPosition = "left bottom"
-    if(!(document.getElementById('password-input').value == passkey)) {
+    if(!(document.getElementById('password-input').value == rot13(passkey, 13))) {
         submitBtn.classList.add('wrong-pass')
         document.getElementById('cover').style.backgroundColor = '#ff1a1a'
         document.getElementById('message').innerHTML = 'TRY AGAIN'
@@ -95,6 +95,19 @@ function revealKey() {
     document.getElementById('wrapper').appendChild(enterThisCode)
     document.getElementById('wrapper').appendChild(code)
     document.getElementById('wrapper').appendChild(buttonFlex)
+}
 
-
+function rot13(str, rot) { // LBH QVQ VG!
+  
+  var string = "";
+  for(var i = 0; i < str.length; i++) {
+    var temp = str.charAt(i);
+    if(temp !== " " || temp!== "!" || temp!== "?") {
+       string += String.fromCharCode(rot + String.prototype.charCodeAt(temp));
+    } else {
+      string += temp;
+    }
+  }
+  
+  return string;
 }
