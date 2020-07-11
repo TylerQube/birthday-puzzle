@@ -8,7 +8,6 @@ document.getElementById('password-input').addEventListener('click', function() {
 
 document.addEventListener('keydown', event => {
     if (event.keyCode == 13) { submit() }
-
 })
 
 function submit() {
@@ -25,6 +24,7 @@ function submit() {
         document.getElementById('message').innerHTML = ''
         valid = true
     }
+    document.getElementById('password-input').blur();
     setTimeout(function() { 
         document.getElementById('cover').style.height = "100%";
         submitBtn.style.color = "white"; 
