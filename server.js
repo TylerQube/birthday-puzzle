@@ -3,9 +3,6 @@ var app = express()
 var path = require('path')
 const port = process.env.PORT || 3000
 
-/*app.all('/resources/*', function(req, res) {
-	res.send('Nice Try!')
-})*/
 app.use(express.static(__dirname))
 
 app.get('/', function(req, res) {

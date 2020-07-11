@@ -1,5 +1,6 @@
+// nice job finding this!
 const passkey = "leftmichelangeloraqmu"
-const giftCode = "1234567890"
+const giftCode = "578-UWQ-368"
 var submitBtn = document.getElementById('submit')
 
 document.getElementById('password-input').addEventListener('click', function() {
@@ -15,13 +16,6 @@ function submit() {
     submitBtn.style.backgroundPosition = "left bottom"
     let enteredPass = document.getElementById('password-input').value.toLowerCase()
     enteredPass = enteredPass.replace(/\s/g, '')
-    /* for( let i = 0; i < loweredPass.length; i++) {
-        console.log(loweredPass.charAt(i))
-        console.log(loweredPass.charAt(i) == ' ')
-        if( !(loweredPass.charAt(i) == ' ') ) {
-            enteredPass.concat(loweredPass.charAt(i))
-        }
-    } */
     console.log(enteredPass)
     if(!(enteredPass == passkey)) {
         submitBtn.classList.add('wrong-pass')
@@ -57,9 +51,6 @@ function revealKey() {
     var heading = document.createElement('h1')
     heading.appendChild(document.createTextNode("Congratulations, you unlocked your gift!"))
     heading.style.fontSize = "4em"
-/*     heading.style.background = "linear-gradient(to right, orange , yellow, green, cyan, blue, violet)"
-    heading.style.webkitBackgroundClip = "text"
-    heading.style.webkitTextFillColor = "transparent" */
     
     var enterThisCode = document.createElement('h2')
     enterThisCode.appendChild(document.createTextNode("For a full credit on the $24 ArtSnacks monthly box,"))
@@ -80,7 +71,7 @@ function revealKey() {
 
     var infoBtn = document.createElement('div')
     var text = document.createElement('h3')
-    text.appendChild(document.createTextNode('How it Works'))
+    text.appendChild(document.createTextNode('About ArtSnacks'))
     text.classList.add('no-select')
     infoBtn.appendChild(text)
     infoBtn.classList.add('store-btn')

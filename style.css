@@ -100,6 +100,10 @@ input {
     cursor:pointer;
 }
 
+.store-btn:hover {
+    background-color: rgb(79, 188, 243);
+}
+
 .cover {
     position:aboslute;
     bottom:0;
