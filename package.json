@@ -1,0 +1,25 @@
+{
+  "name": "birthday-puzzle",
+  "version": "1.0.0",
+  "description": "Birthday Password Entry that reveals secret message",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerQube/birthday-puzzle.git"
+  },
+  "author": "Tyler Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TylerQube/birthday-puzzle/issues"
+  },
+  "homepage": "https://github.com/TylerQube/birthday-puzzle#readme"
+}
