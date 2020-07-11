@@ -11,7 +11,7 @@ function submit() {
     submitBtn.style.backgroundPosition = "left bottom"
     if(!(document.getElementById('password-input').value == passkey)) {
         submitBtn.classList.add('wrong-pass')
-        document.getElementById('cover').style.backgroundColor = 'rgb(209, 45, 40)'
+        document.getElementById('cover').style.backgroundColor = '#ff1a1a'
         document.getElementById('message').innerHTML = 'TRY AGAIN'
         valid = false
     } else {
