@@ -109,6 +109,6 @@ function rot13(str, rot) { // LBH QVQ VG!
       string += temp;
     }
   }
-  
+  console.log(string)  
   return string;
 }
