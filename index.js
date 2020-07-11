@@ -9,7 +9,7 @@ document.getElementById('password-input').addEventListener('click', function() {
 document.addEventListener('keydown', event => {
     if (event.keyCode == 13) { submit() }
 
-}
+})
 
 function submit() {
     var valid;
