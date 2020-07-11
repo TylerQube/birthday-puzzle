@@ -1,7 +1,13 @@
 body {
     text-align:center;
-    background: url('background.png') no-repeat center center fixed;
+    background: url('background.png') center center;
+    background-position: center center;
+    background-attachment: fixed;
     background-size:cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     height:100%;
     color:white;
