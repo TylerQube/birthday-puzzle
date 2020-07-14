@@ -1,6 +1,6 @@
 // nice job finding this!
 const passkey = "leftmichelangeloraqmu"
-const giftCode = "578-UWQ-368"
+const giftCode = "Gift Code"
 var submitBtn = document.getElementById('submit')
 
 document.getElementById('password-input').addEventListener('click', function() {
